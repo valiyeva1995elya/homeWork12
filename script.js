@@ -39,14 +39,14 @@ class Rectangle {
         this.width = width + "px";
         this.height = height + "px";
     };
-    setWidth(){
-        this.width = +prompt("введите ширина")  + "px";
+    setWidth(width){
+        this.width = width  + "px";
     };
     getWidth(){
         return this.width;
     };
-    setHeight(){
-        this.height = +prompt("введите высота") + "px";
+    setHeight(height){
+        this.height = height + "px";
     };
     getHeight(){
         return this.height;
@@ -54,10 +54,8 @@ class Rectangle {
 }
  let rectangle = new Rectangle(200, 350);
  console.log(rectangle);
- rectangle.setWidth();
- alert(rectangle.getWidth());
- rectangle.setHeight();
- alert(rectangle.getHeight());
+ rectangle.setWidth(500)
+ rectangle.setHeight(700);
  console.log(rectangle);
 
 
